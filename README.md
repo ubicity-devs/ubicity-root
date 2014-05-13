@@ -1,4 +1,3 @@
-ubicity-root
-============
+Root POM for the ubicity project.
 
-Root project forUBICITY
+This project contains the root configuration and the necessary build and configuration scripts for building the application.

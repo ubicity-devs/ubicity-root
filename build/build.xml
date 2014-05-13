@@ -1,0 +1,20 @@
+<project name="Ubicity" default="install-all" basedir="../">
+	
+	<target name="install-all" description="Builds and installs ubicity and all plugins">
+		<exec executable="mvn.bat" failonerror="true">
+			<arg line="clean install" />
+		</exec>
+	</target>
+
+	<target name="install-dependencies" description="Builds and installs the releases of the dependent projects">
+		<exec dir="../jcores" executable="mvn" failonerror="true">
+			<arg line="clean install" />
+		</exec>
+		<exec dir="../ubicity-jspf" executable="mvn" failonerror="true">
+			<arg line="clean install" />
+		</exec>
+		<exec dir="../ubicity-json" executable="mvn" failonerror="true">
+			<arg line="clean install" />
+		</exec>
+	</target>
+</project>
