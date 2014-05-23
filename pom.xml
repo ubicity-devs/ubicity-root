@@ -37,9 +37,13 @@
 		<module>../ubicity-commons</module>
 		<module>../ubicity-core</module>
 
+		<!-- Plugins -->
 		<module>../ubicity-flickrplugin</module>
 		<module>../ubicity-twitterplugin</module>
 		<module>../voodoo</module>
 		<module>../ubicity-on-demand-indexing</module>
+		
+		<!-- AddOns -->
+		<module>../ubicity-elasticsearch</module>
 	</modules>
 </project>
