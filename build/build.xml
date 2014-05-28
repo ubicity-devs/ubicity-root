@@ -13,8 +13,5 @@
 		<exec dir="../ubicity-jspf" executable="mvn" failonerror="true">
 			<arg line="clean install" />
 		</exec>
-		<exec dir="../ubicity-json" executable="mvn" failonerror="true">
-			<arg line="clean install" />
-		</exec>
 	</target>
 </project>
