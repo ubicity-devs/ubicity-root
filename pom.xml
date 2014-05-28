@@ -32,7 +32,6 @@
 			<version>1.9</version>
 		</dependency>
 	</dependencies>
-
 	<modules>
 		<module>../ubicity-commons</module>
 		<module>../ubicity-core</module>
