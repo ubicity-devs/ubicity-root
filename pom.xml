@@ -40,7 +40,7 @@
 		<!-- Plugins -->
 		<module>../ubicity-flickrplugin</module>
 		<module>../ubicity-twitterplugin</module>
-		<module>../voodoo</module>
+		<module>../ubicity-voodoo</module>
 		<module>../ubicity-on-demand-indexing</module>
 		
 		<!-- AddOns -->
