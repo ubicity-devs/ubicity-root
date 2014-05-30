@@ -8,6 +8,7 @@
 	<packaging>pom</packaging>
 
 	<name>ubicity-root</name>
+	<url>http://maven.apache.org</url>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -19,7 +20,6 @@
 		<url>https://github.com/ubicity-principal/ubicity-root</url>
 		<tag>HEAD</tag>
 	</scm>
-
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -51,7 +51,6 @@
 		<!-- AddOns -->
 		<module>../ubicity-elasticsearch</module>
 	</modules>
-
 	<build>
 		<plugins>
 			<plugin>
