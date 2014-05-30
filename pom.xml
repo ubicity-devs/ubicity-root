@@ -13,13 +13,6 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
-	<scm>
-		<connection>scm:git:https://github.com/ubicity-principal/ubicity-root.git</connection>
-		<developerConnection>scm:git:git@github.com:ubicity-principal/ubicity-root.git</developerConnection>
-		<url>https://github.com/ubicity-principal/ubicity-root</url>
-		<tag>HEAD</tag>
-	</scm>
-
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -51,18 +44,4 @@
 		<!-- AddOns -->
 		<module>../ubicity-elasticsearch</module>
 	</modules>
-
-	<build>
-		<plugins>
-			<plugin>
-				<artifactId>maven-release-plugin</artifactId>
-				<version>2.5</version>
-				<configuration>
-					<useReleaseProfile>false</useReleaseProfile>
-					<releaseProfiles>release</releaseProfiles>
-					<autoVersionSubmodules>true</autoVersionSubmodules>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
 </project>
