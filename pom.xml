@@ -8,11 +8,16 @@
 	<packaging>pom</packaging>
 
 	<name>ubicity-root</name>
-	<url>http://maven.apache.org</url>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
+
+	<scm>
+		<connection>scm:git:git@github.com/ubicity-principal/ubicity-root.git</connection>
+		<url>scm:git:git@github.com/ubicity-principal/ubicity-root.git</url>
+		<developerConnection>scm:git:git@github.com/ubicity-principal/ubicity-root.git</developerConnection>
+	</scm>
 
 	<dependencies>
 		<dependency>
@@ -41,8 +46,18 @@
 		<module>../ubicity-twitterplugin</module>
 		<module>../ubicity-voodoo</module>
 		<module>../ubicity-on-demand-indexing</module>
-		
+
 		<!-- AddOns -->
 		<module>../ubicity-elasticsearch</module>
 	</modules>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.5</version>
+			</plugin>
+		</plugins>
+	</build>
 </project>
