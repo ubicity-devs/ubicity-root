@@ -4,7 +4,7 @@
 
 	<groupId>at.ac.ait.ubicity</groupId>
 	<artifactId>ubicity-root</artifactId>
-	<version>0.2.2-SNAPSHOT</version>
+	<version>0.3.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>ubicity-root</name>
