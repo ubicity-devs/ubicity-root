@@ -43,8 +43,7 @@
 		<module>../ubicity-twitterplugin</module>
 		<module>../ubicity-voodoo</module>
 		<module>../ubicity-on-demand-indexing</module>
-
-		<!-- AddOns -->
+		<module>../ubicity-crawler</module>
 		<module>../ubicity-elasticsearch</module>
 	</modules>
 </project>
