@@ -45,5 +45,6 @@
 		<module>../ubicity-on-demand-indexing</module>
 		<module>../ubicity-crawler</module>
 		<module>../ubicity-elasticsearch</module>
+		<module>../ubicity-email</module>
 	</modules>
 </project>
