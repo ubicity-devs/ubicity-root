@@ -48,5 +48,6 @@
 		<module>../ubicity-elasticsearch</module>
 		<module>../ubicity-couchbase</module>
 		<module>../ubicity-email</module>
+		<module>../ubicity-rss</module>
 	</modules>
 </project>
