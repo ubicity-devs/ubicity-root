@@ -49,5 +49,6 @@
 		<module>../ubicity-couchbase</module>
 		<module>../ubicity-email</module>
 		<module>../ubicity-rss</module>
+		<module>../ubicity-facebook</module>
 	</modules>
 </project>
