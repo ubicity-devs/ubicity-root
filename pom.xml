@@ -38,7 +38,7 @@
 		<module>../ubicity-broker</module>
 		
 		<!-- Plugins -->
-		<module>../ubicity-jit</module>
+		<module>../ubicity-rest</module>
 		<module>../ubicity-flickrplugin</module>
 		<module>../ubicity-twitterplugin</module>
 		<module>../ubicity-voodoo</module>
