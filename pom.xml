@@ -32,7 +32,6 @@
 		</dependency>
 	</dependencies>
 	<modules>
-		<module>../ubicity-contracts</module>
 		<module>../ubicity-commons</module>
 		<module>../ubicity-core</module>
 

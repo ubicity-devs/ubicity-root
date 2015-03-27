@@ -2,7 +2,7 @@
 	
 	<target name="install-all" description="Builds and installs ubicity and all plugins">
 		<exec executable="mvn.bat" failonerror="true">
-			<arg line="clean install" />
+			<arg line="clean install -Dmaven.test.skip=true" />
 		</exec>
 	</target>
 
