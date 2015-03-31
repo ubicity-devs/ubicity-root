@@ -4,7 +4,7 @@
 
 	<groupId>at.ac.ait.ubicity</groupId>
 	<artifactId>ubicity-root</artifactId>
-	<version>0.4.0-SNAPSHOT</version>
+	<version>1.1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>ubicity-root</name>
@@ -39,15 +39,16 @@
 		
 		<!-- Plugins -->
 		<module>../ubicity-rest</module>
-		<module>../ubicity-flickrplugin</module>
-		<module>../ubicity-twitterplugin</module>
-		<module>../ubicity-voodoo</module>
-		<module>../ubicity-on-demand-indexing</module>
+		<module>../ubicity-flickr</module>
+		<module>../ubicity-twitter</module>
+		<module>../ubicity-graph</module>
+		<module>../ubicity-es-on-demand</module>
 		<module>../ubicity-crawler</module>
 		<module>../ubicity-elasticsearch</module>
 		<module>../ubicity-couchbase</module>
 		<module>../ubicity-email</module>
 		<module>../ubicity-rss</module>
 		<module>../ubicity-facebook</module>
+		<module>../ubicity-uima</module>
 	</modules>
 </project>
