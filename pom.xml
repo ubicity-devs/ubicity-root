@@ -31,24 +31,64 @@
 			<version>1.9</version>
 		</dependency>
 	</dependencies>
-	<modules>
-		<module>../ubicity-commons</module>
-		<module>../ubicity-core</module>
+	<profiles>
+		<profile>
+			<id>all</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<modules>
+				<module>../ubicity-commons</module>
+				<module>../ubicity-core</module>
 
-		<module>../ubicity-broker</module>
-		
-		<!-- Plugins -->
-		<module>../ubicity-rest</module>
-		<module>../ubicity-flickr</module>
-		<module>../ubicity-twitter</module>
-		<module>../ubicity-graph</module>
-		<module>../ubicity-es-on-demand</module>
-		<module>../ubicity-crawler</module>
-		<module>../ubicity-elasticsearch</module>
-		<module>../ubicity-couchbase</module>
-		<module>../ubicity-email</module>
-		<module>../ubicity-rss</module>
-		<module>../ubicity-facebook</module>
-		<module>../ubicity-uima</module>
-	</modules>
+				<module>../ubicity-broker</module>
+
+				<!-- Plugins -->
+				<module>../ubicity-rest</module>
+				<module>../ubicity-flickr</module>
+				<module>../ubicity-twitter</module>
+				<module>../ubicity-graph</module>
+				<module>../ubicity-es-on-demand</module>
+				<module>../ubicity-crawler</module>
+				<module>../ubicity-elasticsearch</module>
+				<module>../ubicity-couchbase</module>
+				<module>../ubicity-email</module>
+				<module>../ubicity-rss</module>
+				<module>../ubicity-facebook</module>
+				<module>../ubicity-analytics</module>
+			</modules>
+		</profile>
+
+		<profile>
+			<id>rss</id>
+			<modules>
+				<module>../ubicity-commons</module>
+				<module>../ubicity-core</module>
+
+				<module>../ubicity-broker</module>
+
+				<!-- Plugins -->
+				<module>../ubicity-elasticsearch</module>
+				<module>../ubicity-rss</module>
+				<module>../ubicity-analytics</module>
+			</modules>
+		</profile>
+
+		<profile>
+			<id>twitter</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<modules>
+				<module>../ubicity-commons</module>
+				<module>../ubicity-core</module>
+
+				<module>../ubicity-broker</module>
+
+				<!-- Plugins -->
+				<module>../ubicity-twitter</module>
+				<module>../ubicity-elasticsearch</module>
+			</modules>
+		</profile>
+	</profiles>
 </project>

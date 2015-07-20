@@ -2,10 +2,20 @@
 	
 	<target name="install-all" description="Builds and installs ubicity and all plugins">
 		<exec executable="mvn.bat" failonerror="true">
-			<arg line="clean install -Dmaven.test.skip=true" />
+			<arg line="clean install -Dmaven.test.skip=true -Pall" />
 		</exec>
 	</target>
-
+	<target name="install-rss" description="Builds and installs rss components">
+		<exec executable="mvn.bat" failonerror="true">
+			<arg line="clean install -Dmaven.test.skip=true -Prss" />
+		</exec>
+	</target>
+	<target name="install-twitter" description="Builds and installs twitter components">
+		<exec executable="mvn.bat" failonerror="true">
+			<arg line="clean install -Dmaven.test.skip=true -Ptwitter" />
+		</exec>
+	</target>
+	
 	<target name="install-dependencies" description="Builds and installs the releases of the dependent projects">
 		<exec dir="../jcores" executable="mvn.bat" failonerror="true">
 			<arg line="clean install" />
