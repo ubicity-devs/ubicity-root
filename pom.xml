@@ -4,7 +4,7 @@
 
 	<groupId>at.ac.ait.ubicity</groupId>
 	<artifactId>ubicity-root</artifactId>
-	<version>1.2.0-SNAPSHOT</version>
+	<version>1.3.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>ubicity-root</name>
@@ -37,6 +37,25 @@
 			<activation>
 				<activeByDefault>true</activeByDefault>
 			</activation>
+			<modules>
+				<module>../ubicity-commons</module>
+				<module>../ubicity-core</module>
+
+				<module>../ubicity-broker</module>
+
+				<!-- Plugins -->
+				<module>../ubicity-rest</module>
+				<module>../ubicity-flickr</module>
+				<module>../ubicity-twitter</module>
+				<module>../ubicity-elasticsearch</module>
+				<module>../ubicity-couchbase</module>
+				<module>../ubicity-rss</module>
+				<module>../ubicity-analytics</module>
+			</modules>
+		</profile>
+
+		<profile>
+			<id>dev</id>
 			<modules>
 				<module>../ubicity-commons</module>
 				<module>../ubicity-core</module>

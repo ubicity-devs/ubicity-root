@@ -1,8 +1,13 @@
 <project name="Ubicity" default="install-all" basedir="../">
 	
-	<target name="install-all" description="Builds and installs ubicity and all plugins">
+	<target name="install-all" description="Builds and installs ubicity and used plugins">
 		<exec executable="mvn.bat" failonerror="true">
 			<arg line="clean install -Dmaven.test.skip=true -Pall" />
+		</exec>
+	</target>
+	<target name="install-dev" description="Builds and installs ubicity and all plugins">
+		<exec executable="mvn.bat" failonerror="true">
+			<arg line="clean install -Dmaven.test.skip=true -Pdev" />
 		</exec>
 	</target>
 	<target name="install-rss" description="Builds and installs rss components">
